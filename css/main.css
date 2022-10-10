@@ -1,0 +1,137 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    background-color: #e6e4c4;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*****Design-Box-Sigeme*****/
+.me
+{
+    width: 80px;
+}
+.boox
+{
+    background-color: white;
+    margin-bottom: 200px;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+
+    border: solid 3px black;
+}
+.toggle
+{
+    padding-right: 100px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    
+
+}
+.toggle::before
+{
+    content: '@bastndev';
+    color: rgba(175, 175, 175, 0.683);
+    font-weight: bold;
+}
+/*****Cambio de Imagen*****/
+img{
+    transition: 0.3s;
+    cursor: pointer;
+}
+img:active{
+    transform: scale(0.8);
+}
+/*****Ul - LI*****/
+.navigation
+{
+    
+    position: fixed;
+    top: 225px;
+    width: 320px;
+    left: 460px;
+
+}
+ul
+{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+ul li
+{
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-250px);
+    transition-delay: calc(.2s * var(--i));
+}
+.navigation.active ul li
+{
+    visibility: visible ;
+    opacity: 1;
+    transform: translateX(0px);
+}
+ul li a 
+{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    background: #fff;
+    color: #333;
+    transition: 0.5s;
+    margin-bottom: 3px;
+
+}
+ul li a:hover 
+{
+    color: white;
+    background-color: #1b1b1b;
+}
+/*Social - Media*/
+a.uno
+{
+    border-radius: 5px;
+    background-color: #f84d1d;
+    border: solid 3px black;
+
+}
+a.dos
+{
+    border-radius: 5px;
+    background-color: #9f55f8;
+    border: solid 3px black;
+
+}
+a.tres
+{
+    border-radius: 5px;
+    background-color: #10cd81;
+    border: solid 3px black;
+
+}
+a.cuatro
+{
+    border-radius: 5px;
+    background-color: #12c3fc;
+    border: solid 3px black;
+
+}
+
+
